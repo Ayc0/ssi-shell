@@ -5,7 +5,7 @@ RUN apk --no-cache add busybox-suid openssh-server
 RUN apk --no-cache add zsh nano curl man man-pages
 RUN apk --no-cache add python3 nmap nmap-scripts tcpdump sudo
 
-RUN echo 'root:password' | chpasswd
+RUN echo 'root:qczqdupe9vsiy5cxg923mwiyxm8fkh8' | chpasswd
 
 RUN mkdir /var/run/sshd
 ENV NOTVISIBLE "in users profile"
@@ -13,6 +13,8 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 
 COPY etc /etc
 COPY setup.sh /usr/local/
+COPY tests /usr/local/tests/
+COPY .zshrc /usr/local/
 
 EXPOSE 22
 
