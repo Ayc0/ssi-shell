@@ -10,6 +10,6 @@ Works with [thuv](https://github.com/gandem/thuv).
 ## Commands
 
 - Build: `docker build -t ssi_tuto .`
-- Run: `docker run -it --rm -p 3000:22 ssi_tuto <login> <passwd>`
+- Run: `docker run -it --rm --security-opt seccomp=unconfined -p 3000:22 ssi_tuto <login> <passwd>`
 - SSH: `ssh -p 3000 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null <login>@0.0.0.0`
 - tests: `ssh -p 3000 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -t login@0.0.0.0 'sudo /usr/local/tests/tests.sh'`

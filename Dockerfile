@@ -4,6 +4,7 @@ RUN apk update && apk upgrade
 RUN apk --no-cache add busybox-suid openssh-server
 RUN apk --no-cache add zsh nano curl man man-pages
 RUN apk --no-cache add python3 nmap nmap-scripts tcpdump sudo
+RUN apk --no-cache add gcc musl-dev gdb
 
 RUN echo 'root:qczqdupe9vsiy5cxg923mwiyxm8fkh8' | chpasswd
 
