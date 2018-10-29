@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # sudo
-echo "sudo:x:101:root,$1" >> /etc/group
+echo "sudo:x:99:root,$1" >> /etc/group
 echo "\n%sudo ALL=(ALL) ALL" >> /etc/sudoers
 echo "\n%sudo ALL=(ALL:ALL) NOPASSWD:/usr/local/tests/tests.sh" >> /etc/sudoers
 
