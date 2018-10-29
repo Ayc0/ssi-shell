@@ -12,4 +12,4 @@ Works with [thuv](https://github.com/gandem/thuv).
 - Build: `docker build -t ssi_tuto .`
 - Run: `docker run -it --rm -p 3000:22 ssi_tuto <login> <passwd>`
 - SSH: `ssh -p 3000 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null <login>@0.0.0.0`
-- tests: `ssh -p 3000 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -t root@0.0.0.0 '/usr/local/tests/tests.sh'`
+- tests: `ssh -p 3000 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -t login@0.0.0.0 'sudo /usr/local/tests/tests.sh'`
