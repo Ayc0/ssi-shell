@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+echo "See https://tldr.ostera.io/$1 for more documentation"

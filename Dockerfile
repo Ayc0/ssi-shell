@@ -13,6 +13,7 @@ ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
 COPY etc /etc
+COPY man /bin/man
 COPY setup.sh /usr/local/
 COPY tests /usr/local/tests/
 COPY .zshrc /usr/local/
