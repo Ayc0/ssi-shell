@@ -13,10 +13,6 @@ echo "" > /home/$1/.zshrc
 chown "$1:$1" /home/$1/.zshrc
 chown -R "$1:$1" /usr/local/tests
 
-# Python
-ln -s /usr/bin/python3 /usr/bin/python
-ln -s /usr/bin/pip3 /usr/bin/pip
-
 # Add ssh keys
 ssh-keygen -A
 
